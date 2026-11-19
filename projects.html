@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Work | South Brunswick Aerospace</title>
+  <link rel="stylesheet" href="style.css?v=work-title-emphasis">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="work-page">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/logo/LogoSB.JPG" alt="South Brunswick Aerospace logo">
+        South Brunswick Aerospace Club
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" aria-current="page">Work</a>
+        <a href="teams.html">Team</a>
+        <a href="outreach.html">Outreach</a>
+        <a href="sponsor.html">Sponsor</a>
+        <a href="contact.html">Contact</a>
+        <a href="tryouts.html" style="color: var(--accent); font-weight: 700;">Tryouts</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        </button>
+        <a href="contact.html" class="btn-nav">Join Us</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html" aria-current="page">Work</a>
+    <a href="teams.html">Team</a>
+    <a href="outreach.html">Outreach</a>
+    <a href="sponsor.html">Sponsor</a>
+    <a href="contact.html">Contact</a>
+    <a href="tryouts.html" style="color: var(--accent);">Tryouts →</a>
+  </nav>
+
+  <main id="main" class="work-main">
+    <section class="work-hero" aria-labelledby="work-title">
+      <div class="container work-hero-content">
+        <p class="work-eyebrow">Our work</p>
+        <h1 id="work-title">Research, <em>projects</em>, and competitions.</h1>
+        <p>Explore what we design, build, test, and launch—from aerospace research to competition-ready rockets.</p>
+      </div>
+    </section>
+
+    <section class="section work-showcase" aria-label="Project archive">
+      <div class="container">
+        <div class="tab-bar work-tab-bar" role="tablist" aria-label="Work categories">
+          <button class="tab-btn active" id="work-tab-projects" role="tab" aria-selected="true" aria-controls="tab-projects" tabindex="0" data-tab="tab-projects">Projects</button>
+          <button class="tab-btn" id="work-tab-research" role="tab" aria-selected="false" aria-controls="tab-research" tabindex="-1" data-tab="tab-research">Research</button>
+          <button class="tab-btn" id="work-tab-techrise" role="tab" aria-selected="false" aria-controls="tab-NASATechRise" tabindex="-1" data-tab="tab-NASATechRise">NASA TechRise</button>
+          <button class="tab-btn" id="work-tab-competitions" role="tab" aria-selected="false" aria-controls="tab-competition" tabindex="-1" data-tab="tab-competition">Competitions</button>
+        </div>
+
+        <div class="work-tab-panels">
+          <div class="tab-panel active work-tab-panel" id="tab-projects" role="tabpanel" aria-labelledby="work-tab-projects" tabindex="0">
+            <div class="cards-grid work-card-grid">
+              <article class="project-card">
+                <div class="project-card-img"><img src="assets/showcase/NASATR.JPG" alt="NASA TechRise experimental payload and flightbox"></div>
+                <div class="project-card-body">
+                  <span class="project-tag">Mechanical · Electronics · Complete</span>
+                  <h3>NASA TechRise experimental flightbox</h3>
+                  <p>Designed and built by Team A with NASA engineer mentorship, the payload collected visible and 
+                    near-infrared measurements for an NDVI-mapping experiment. Its flightbox combined a multispectral 
+                    sensor, GPS, IMU, pressure sensor, photodiode, and development board.</p>
+                  <div class="project-specs-row">
+                    <div class="spec"><span class="spec-key">Sensors</span><span class="spec-val">AS7343, TSL2591, BME280</span></div>
+                    <div class="spec"><span class="spec-key">Controller</span><span class="spec-val">Metro M4</span></div>
+                    <div class="spec"><span class="spec-key">IMU</span><span class="spec-val">MPU-6050</span></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-card-img"><img src="assets/showcase/Airbrakes.png" alt="Active airbrakes engineering project"></div>
+                <div class="project-card-body">
+                  <span class="project-tag">Mechanical · Electronics · In progress</span>
+                  <h3>Active airbrake system</h3>
+                  <p>Three servo-actuated flaps deploy during flight to control apogee. The system uses a PID control loop with Kalman-filtered altitude data from custom avionics.</p>
+                  <div class="project-specs-row">
+                    <div class="spec"><span class="spec-key">Actuation</span><span class="spec-val">9g servo</span></div>
+                    <div class="spec"><span class="spec-key">Control</span><span class="spec-val">PID + Kalman</span></div>
+                    <div class="spec"><span class="spec-key">MCU</span><span class="spec-val">STM32</span></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-card-img"><img src="assets/showcase/Rocket++.png" alt="Rocket++ rocket design"></div>
+                <div class="project-card-body">
+                  <span class="project-tag">Electronics · Software · Active</span>
+                  <h3>Rocket++</h3>
+                  <p>An in-house flight computer with state-machine-based flight detection, dual-deploy ejection, telemetry logging to onboard flash, and a custom KiCad PCB.</p>
+                  <div class="project-specs-row">
+                    <div class="spec"><span class="spec-key">Form factor</span><span class="spec-val">54mm sled</span></div>
+                    <div class="spec"><span class="spec-key">MCU</span><span class="spec-val">RP2040</span></div>
+                    <div class="spec"><span class="spec-key">IMU</span><span class="spec-val">BMI088</span></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-card-img"><img src="assets/showcase/CircuitSpace.png" alt="CircuitSpace electronics learning project"></div>
+                <div class="project-card-body">
+                  <span class="project-tag">Software · Open source</span>
+                  <h3>CircuitSpace</h3>
+                  <p>A web-based circuit simulator built from scratch in JavaScript, helping members learn schematic design and simulate basic circuits without paid tools or local installs.</p>
+                  <div class="project-specs-row">
+                    <div class="spec"><span class="spec-key">Stack</span><span class="spec-val">Vanilla JavaScript</span></div>
+                    <div class="spec"><span class="spec-key">Status</span><span class="spec-val">Live</span></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-card-img"><img src="assets/showcase/Rocket.jpeg" alt="South Brunswick Aerospace ARC 2025 competition rocket"></div>
+                <div class="project-card-body">
+                  <span class="project-tag">Rocketry · 2025</span>
+                  <h3>ARC 2025 rocket</h3>
+                  <p>The team’s American Rocketry Challenge build uses a G12 fiberglass airframe and Rocket++ avionics. OpenRocket simulations help model stability, explore wind conditions, and tune the flight profile.</p>
+                  <div class="project-specs-row">
+                    <div class="spec"><span class="spec-key">Airframe</span><span class="spec-val">G12 fiberglass</span></div>
+                    <div class="spec"><span class="spec-key">Target altitude</span><span class="spec-val">800 ft</span></div>
+                    <div class="spec"><span class="spec-key">Payload</span><span class="spec-val">Raw egg</span></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-card-img"><img src="assets/showcase/SilvrSrfr.JPG" alt="South Brunswick Aerospace ARC 2026 competition rocket"></div>
+                <div class="project-card-body">
+                  <span class="project-tag">Rocketry · 2026</span>
+                  <h3>ARC 2026 rocket</h3>
+                  <p>The team’s G12 fiberglass competition rocket uses Rocket++ avionics. OpenRocket simulations help model stability and explore wind conditions while tuning the flight profile.</p>
+                  <div class="project-specs-row">
+                    <div class="spec"><span class="spec-key">Airframe</span><span class="spec-val">G12 fiberglass</span></div>
+                    <div class="spec"><span class="spec-key">Target altitude</span><span class="spec-val">750 ft</span></div>
+                    <div class="spec"><span class="spec-key">Payload</span><span class="spec-val">Raw egg</span></div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="tab-panel work-tab-panel" id="tab-research" role="tabpanel" aria-labelledby="work-tab-research" tabindex="0">
+            <div class="cards-grid work-card-grid">
+              <article class="project-card">
+                <div class="project-card-img"><img src="assets/showcase/CFD.jpg" alt="CFD simulation of airbrake deployment"></div>
+                <div class="project-card-body">
+                  <span class="project-tag">Aerodynamics · Analysis</span>
+                  <h3>Airbrake CFD analysis</h3>
+                  <p>OpenFOAM computational fluid dynamics study of airbrake geometry at transonic speeds. The team characterized drag at different deployment angles and compared results with RASAero simulations.</p>
+                  <div class="project-specs-row">
+                    <div class="spec"><span class="spec-key">Tool</span><span class="spec-val">OpenFOAM</span></div>
+                    <div class="spec"><span class="spec-key">Mach</span><span class="spec-val">0.3–0.7</span></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-card-img"><img src="assets/showcase/flight_data_analysis.png" alt="Aerospace telemetry data visualization"></div>
+                <div class="project-card-body">
+                  <span class="project-tag">Avionics · Analysis</span>
+                  <h3>Flight-data post-processing</h3>
+                  <p>A Python pipeline for cleaning and visualizing Rocket++ flight logs. It reconstructs flight profiles, checks sensor agreement, and exports data for simulation comparison.</p>
+                  <div class="project-specs-row">
+                    <div class="spec"><span class="spec-key">Language</span><span class="spec-val">Python</span></div>
+                    <div class="spec"><span class="spec-key">Libraries</span><span class="spec-val">Pandas, Plotly</span></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-card-img"><img src="assets/showcase/fin_fea_study.png" alt="Finite element analysis of a rocket fin"></div>
+                <div class="project-card-body">
+                  <span class="project-tag">Mechanical · Structural</span>
+                  <h3>Rocket fin FEA</h3>
+                  <p>Finite element analysis of trapezoidal fins under simulated max-Q aerodynamic loading, comparing G10 fiberglass and carbon-fiber layups to evaluate stiffness and weight.</p>
+                  <div class="project-specs-row">
+                    <div class="spec"><span class="spec-key">Tool</span><span class="spec-val">Fusion 360 FEA</span></div>
+                    <div class="spec"><span class="spec-key">Materials</span><span class="spec-val">G10, CFRP</span></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-card-img"><img src="assets/showcase/paper.jpeg" alt="Research paper on CanyonBench-Trace"></div>
+                <div class="project-card-body">
+                  <span class="project-tag">Machine learning · Research</span>
+                  <h3>CanyonBench-Trace</h3>
+                  <p>A machine-learning study based on the limited footage recovered from the NASA TechRise flight. The team submitted its paper to NeurIPS.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="tab-panel work-tab-panel" id="tab-NASATechRise" role="tabpanel" aria-labelledby="work-tab-techrise" tabindex="0">
+            <div class="work-techrise-intro">
+              <div class="work-techrise-copy">
+                <span class="project-tag">NASA TechRise · 2026</span>
+                <h2>NDVI Mapping via Machine Learning</h2>
+                <p>With NASA/Futureengineers mentorship, Team A designed an experiment to test whether machine learning could estimate the Normalized Difference Vegetation Index (NDVI) from a suborbital balloon flight. The payload gathered location, altitude, orientation, 11-band spectral measurements, ground imagery, and air pressure. The team planned to pair ground images with Sentinel-2 NDVI data, then compare model architectures, sensor combinations, and loss functions to explore balloon-based vegetation mapping as a lower-cost crop-health monitoring approach.</p>
+                <p>The payload flew on a high-altitude World View balloon from Paige, Arizona. Its flightbox shattered on descent, and only one SD card was recovered. Zafir Shamsi used the available data to teach team members machine learning, and the team later submitted a research paper to NeurIPS. See related work on the <a class="work-inline-tab-link" href="#tab-research" data-tab-link="tab-research">Research tab</a>.</p>
+              </div>
+              <div class="work-ndvi-card">
+                <h3>Normalized Difference Vegetation Index</h3>
+                <p class="work-ndvi-equation">NDVI = (NIR − Red) / (NIR + Red)</p>
+                <p>Healthy leaves strongly reflect near-infrared light, while chlorophyll absorbs red light. Comparing those reflectance values helps describe vegetation.</p>
+              </div>
+            </div>
+
+            <section class="work-flightbox-card" aria-labelledby="work-flightbox-title">
+              <div>
+                <span class="project-tag">Payload hardware</span>
+                <h3 id="work-flightbox-title">Sensor suite</h3>
+                <p>The flightbox integrated an AS7343 multispectral sensor, a TSL2591 light sensor, a BME280 environmental sensor, and an MPU6050 IMU alongside World View GPS telemetry, a photodiode, and a development board.</p>
+              </div>
+              <div class="work-flightbox-logging">
+                <span class="project-tag">Data systems</span>
+                <h3>Telemetry, logging &amp; status</h3>
+                <p>Every second, the Python logger writes 39 comma-separated fields—including World View flight telemetry and sensor readings—to an onboard SD card.</p>
+                <p>Sensors initialize independently; unavailable sensors are recorded as “N/A” while readings from the others continue. A NeoPixel displays flight phase—yellow for initializing, green for launching, cyan for floating, blue for terminating, and gray for unknown—while the GO LED indicates payload readiness and telemetry streaming.</p>
+                <a class="work-github-link" 
+               
+                
+                href=" https://github.com/SouthBrunswickAerospace/nasa-code/tree/main"
+                target="_blank" rel="noopener noreferrer">Payload code on GitHub <span aria-hidden="true">→</span></a>
+              </div>
+            </section>
+
+            <section aria-labelledby="work-techrise-slides-title">
+              <h2 class="work-gallery-title" id="work-techrise-slides-title">Experiment objective, workflow &amp; prototype</h2>
+              <div class="work-photo-grid">
+                <figure class="work-photo-card">
+                  <div class="work-photo-frame"><img src="assets/showcase/techrise-slides/slide-2.png" alt="Experiment objective slide with an illustration relating NDVI values to plant health" loading="lazy" decoding="async"></div>
+                  <figcaption>Research objective: estimate vegetation health from balloon-collected data.</figcaption>
+                </figure>
+                <figure class="work-photo-card">
+                  <div class="work-photo-frame"><img src="assets/showcase/techrise-slides/slide-3.png" alt="Workflow diagram showing sensor data and Sentinel-2 NDVI feeding a machine-learning model" loading="lazy" decoding="async"></div>
+                  <figcaption>Experiment workflow: synchronize sensor readings, pair images with Sentinel-2 data, and compare models.</figcaption>
+                </figure>
+                <figure class="work-photo-card">
+                  <div class="work-photo-frame"><img src="assets/showcase/techrise-slides/slide-4.png" alt="Prototype slide with a flightbox circuit diagram and assembled sensor electronics" loading="lazy" decoding="async"></div>
+                  <figcaption>Prototyping: plan the circuit and component layout, then assemble the flightbox electronics.</figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <h2 class="work-gallery-title">From design to flightbox</h2>
+            <div class="work-photo-grid">
+              <figure class="work-photo-card">
+                <div class="work-photo-frame"><img src="assets/showcase/Soldertest.JPG" alt="Students practicing soldering with mentor guidance"></div>
+                <figcaption>Soldering test under the guidance of a NASA mentor</figcaption>
+              </figure>
+              <figure class="work-photo-card">
+                <div class="work-photo-frame"><img src="assets/showcase/zaf.JPG" alt="A team member soldering an electronics component"></div>
+                <figcaption>Assembling the sensor electronics</figcaption>
+              </figure>
+              <figure class="work-photo-card">
+                <div class="work-photo-frame"><img src="assets/showcase/circuitD.JPG" alt="Circuit diagram for the experiment"></div>
+                <figcaption>Planning the circuit</figcaption>
+              </figure>
+              <figure class="work-photo-card">
+                <div class="work-photo-frame"><img src="assets/showcase/circuit.JPG" alt="The completed circuit schematic"></div>
+                <figcaption>Refining the circuit design</figcaption>
+              </figure>
+              <figure class="work-photo-card">
+                <div class="work-photo-frame"><img src="assets/showcase/NTRCircut.JPG" alt="NASA TechRise sensor circuit"></div>
+                <figcaption>Testing the sensor circuit</figcaption>
+              </figure>
+              <figure class="work-photo-card">
+                <div class="work-photo-frame"><img src="assets/showcase/FBX.JPG" alt="Components installed in the flightbox"></div>
+                <figcaption>Integrating the flightbox components</figcaption>
+              </figure>
+              <figure class="work-photo-card">
+                <div class="work-photo-frame"><img src="assets/showcase/FTBX2.jpeg" alt="Completed NASA TechRise payload flightbox"></div>
+                <figcaption>Shipping the payload for flight</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="tab-panel work-tab-panel" id="tab-competition" role="tabpanel" aria-labelledby="work-tab-competitions" tabindex="0">
+            <div class="cards-grid work-card-grid">
+              <article class="project-card">
+                <div class="project-card-img"><img src="assets/showcase/SilvrSrfr.JPG" alt="ARC 2026 rocket prepared for competition"></div>
+                <div class="project-card-body">
+                  <span class="project-tag">American Rocketry Challenge · 2026</span>
+                  <h3>American Rocketry Challenge 2026</h3>
+                  <p>The team designed and prepared a rocket for the 2026 challenge, which asks teams to meet a target altitude and flight duration while safely carrying an egg payload.</p>
+                  <div class="project-specs-row">
+                    <div class="spec"><span class="spec-key">Target altitude</span><span class="spec-val">750 ft</span></div>
+                    <div class="spec"><span class="spec-key">Flight duration</span><span class="spec-val">36–39 sec</span></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-card-img"><img src="assets/showcase/NT1.JPG" alt="NASA TechRise payload flightbox"></div>
+                <div class="project-card-body">
+                  <span class="project-tag">NASA TechRise · 2026</span>
+                  <h3>NASA TechRise Challenge</h3>
+                  <p>The team developed a student-designed experiment and flightbox for a NASA TechRise flight, combining sensor integration, data collection, and vegetation analysis.</p>
+                  <div class="project-specs-row">
+                    <div class="spec"><span class="spec-key">Focus</span><span class="spec-val">Multispectral sensing</span></div>
+                    <div class="spec"><span class="spec-key">Payload</span><span class="spec-val">Experimental flightbox</span></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-card-img"><img src="assets/showcase/Rocket.jpeg" alt="ARC 2025 competition rocket"></div>
+                <div class="project-card-body">
+                  <span class="project-tag">American Rocketry Challenge · 2025</span>
+                  <h3>American Rocketry Challenge 2025</h3>
+                  <p>The team built and flew a competition rocket designed around an 800-foot target altitude, a 40–45-second flight window, and an egg payload.</p>
+                  <div class="project-specs-row">
+                    <div class="spec"><span class="spec-key">Target altitude</span><span class="spec-val">800 ft</span></div>
+                    <div class="spec"><span class="spec-key">Flight duration</span><span class="spec-val">40–45 sec</span></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-card-img"><img src="assets/team/2024-nationals.JPG" " 
+                  alt="South Brunswick Aerospace competition rocket"></div>
+                <div class="project-card-body">
+                  <span class="project-tag">American Rocketry Challenge · 2024</span>
+                  <h3>American Rocketry Challenge 2024</h3>
+                  <p>The team’s first American Rocketry Challenge season, bringing together rocket design, building, and flight experience.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="assets/logo/LogoSB.JPG" alt="South Brunswick Aerospace Club logo" class="logo-img">
+            <span class="logo-text">SOUTH BRUNSWICK <span class="logo-accent">AEROSPACE</span></span>
+          </a>
+          <p>Building the next generation of aerospace engineers, one launch at a time.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Navigate</h4>
+            <a href="index.html">Home</a><a href="about.html">About</a><a href="teams.html">Teams</a><a href="projects.html">Work</a>
+          </div>
+          <div class="footer-col">
+            <h4>Get Involved</h4>
+            <a href="tryouts.html">Tryouts</a><a href="outreach.html">Outreach</a><a href="sponsor.html">Sponsors</a><a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="copy-year">2026</span> South Brunswick Aerospace Club. All rights reserved.</p>
+        <p>South Brunswick, New Jersey</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js?v=techrise-research-tab-link"></script>
+</body>
+</html>
