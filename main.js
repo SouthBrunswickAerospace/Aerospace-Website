@@ -35,8 +35,8 @@ function applyTheme(theme)
   });
 })();
 
-// ─── DYNAMIC COPYRIGHT YEAR ───────────────────────────────
-document.querySelectorAll('#copy-year').forEach(el => { el.textContent = new Date().getFullYear(); });
+// ─── COPYRIGHT YEAR ────────────────────────────────────────
+document.querySelectorAll('#copy-year').forEach(el => { el.textContent = '2025'; });
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -183,16 +183,27 @@ document.addEventListener('DOMContentLoaded', function () {
   // ─── COPY CLASSROOM CODE ──────────────────────────────────
   const copyBtn = document.getElementById('copyCode');
   if (copyBtn) {
-    copyBtn.addEventListener('click', () => {
+    copyBtn.addEventListener('click', async () => {
       const code = copyBtn.dataset.code || '';
-      navigator.clipboard.writeText(code).then(() => {
+      try {
+        await navigator.clipboard.writeText(code);
+      } catch {
+        const textArea = document.createElement('textarea');
+        textArea.value = code;
+        textArea.style.position = 'fixed';
+        textArea.style.opacity = '0';
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        textArea.remove();
+      } finally {
         copyBtn.textContent = 'Copied!';
         copyBtn.classList.add('copied');
         setTimeout(() => {
           copyBtn.textContent = 'Copy code';
           copyBtn.classList.remove('copied');
         }, 2000);
-      });
+      }
     });
   }
 

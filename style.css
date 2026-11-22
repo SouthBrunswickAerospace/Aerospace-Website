@@ -1511,6 +1511,7 @@ html[data-theme="dark"] .sponsor-page { --sponsor-blue-text: #9CCAF4; }
   color: #83bdf2;
   font-style: normal;
 }
+.about-page .about-hero h1 .about-title-highlight { color: #ffd166; }
 .about-page .about-hero-copy > p {
   max-width: 520px;
   color: rgba(235,243,252,0.78);
@@ -1910,6 +1911,7 @@ html[data-theme="dark"] .sponsor-page { --sponsor-blue-text: #9CCAF4; }
   color: #83bdf2;
   font-style: normal;
 }
+.home-page .home-hero h1 .home-title-highlight { color: #ffd166; }
 .home-page .home-hero-lead {
   max-width: 530px;
   color: rgba(235,243,252,0.78);
@@ -1970,6 +1972,11 @@ html[data-theme="dark"] .sponsor-page { --sponsor-blue-text: #9CCAF4; }
   font-size: 0.78rem;
   line-height: 1.6;
 }
+.home-page .home-hero-detail .home-president-role,
+.home-page .home-mission-detail > p {
+  font-size: 0.95rem;
+  font-weight: 400;
+}
 .home-page .home-mission-detail p,
 .home-page .home-mission-detail li {
   font-size: 0.72rem;
@@ -1995,11 +2002,11 @@ html[data-theme="dark"] .sponsor-page { --sponsor-blue-text: #9CCAF4; }
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-.home-page .home-motto p {
+.home-page .home-motto h2 {
   margin-bottom: 0.3rem;
-  color: #dceafa;
+  color: #ffd166;
   font-family: var(--font-head);
-  font-size: 0.86rem;
+  font-size: 1.1rem;
   font-weight: 700;
   line-height: 1.55;
 }
@@ -2384,10 +2391,18 @@ html[data-theme="dark"] .sponsor-page { --sponsor-blue-text: #9CCAF4; }
 }
 .outreach-page .outreach-story-card img {
   display: block;
-  width: 100%;
-  height: auto;
+  width: 95%;
+  height: 18rem;
+  margin: 1rem auto 0;
+  border-radius: 6px;
+  object-fit: contain;
+  object-position: center;
+  background: var(--bg-card);
 }
-.outreach-page .outreach-story-copy { padding: 1.4rem 1.5rem 1.55rem; }
+.outreach-page .outreach-story-copy {
+  padding: 1.4rem 1.5rem 1.55rem;
+  text-align: center;
+}
 .outreach-page .outreach-story-copy > span {
   display: block;
   margin-bottom: 0.7rem;
